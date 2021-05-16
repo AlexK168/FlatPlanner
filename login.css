@@ -1,0 +1,230 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0;
+}
+
+/* Header */
+div.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(57,24,176);
+    background: linear-gradient(90deg, rgba(57,24,176,1) 36%, rgba(99,55,255,1) 100%);
+}
+
+div#logo {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 10px;
+    color: #fff;
+}
+
+a.nav-link {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    transition: color .2s linear;
+    position: relative;
+}
+
+a.nav-link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #ff6600;
+    display: none;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .2 linear;
+}
+
+a.nav-link:hover {
+    color: #ff6600 
+}
+
+a.nav-link:hover:after {
+    display: block;
+    opacity: 1;
+}
+
+/* Main */
+
+body {
+    background: #ff9500;
+    background: linear-gradient(90deg, rgba(255,149,0,1) 21%, rgba(255,205,0,1) 53%);
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgb(57,24,176);
+    background: linear-gradient(90deg, rgba(57,24,176,1) 36%, rgba(67,31,197,1) 100%);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+  
+.login-box .user-box {
+    position: relative;
+}
+  
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    color: transparent;
+    font-size: 12px;
+}
+
+.login-box form a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    letter-spacing: 4px;
+}
+
+.submit-link-container {
+    margin-top: 15px;
+    text-align: center;
+}
+  
+.login-box a:hover {
+    color: #ff6600 
+}
+
+/* Radiogroup */
+input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+}
+
+label {
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 35px;
+}
+
+input[type=radio]:checked + label{
+    color: #ff6600;
+    transition: 0.3s;
+}
+
+.radio-group {
+    border: solid 3px rgb(87, 49, 221);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+/* Footer */
+
+div.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(57,24,176);
+    background: linear-gradient(90deg, rgba(57,24,176,1) 36%, rgba(99,55,255,1) 100%);
+    position: relative;
+}
+
+a#to-the-top {
+    margin-left: 15px;
+    position: static;
+    z-index: 2;
+}
+
+p#contactus {
+    margin: 15px 15px;
+    color: #fff;
+}
+
+a#contactus {
+    margin: 0px;
+}
+
+p#logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    text-align: center;
+    font-size: large;
+}
+
+@media (max-width: 500px) {
+    div#logo {
+        display: none;
+    }
+
+    div.header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    div.footer a {
+        font-size: small;
+    }
+
+    div.footer p {
+        font-size: small;
+    }
+
+    .login-box {
+        width: 350px;
+    }
+}

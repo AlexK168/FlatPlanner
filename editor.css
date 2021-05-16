@@ -1,0 +1,130 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(99,55,255);
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+}
+
+header button {
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 15px;
+    border-style: none;
+    background: rgb(57,24,176);
+    font-size: large;
+    color: white;
+}
+
+header button:hover {
+    background:#ff9500; 
+    color: #ffb957;
+    transition: 0.2s;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 50px;
+}
+
+canvas {
+    width: 600px;
+    height: 600px;
+    border-color: #ff9500;
+    border-width: 5px;
+    border-style: solid;
+    position:fixed;
+    right: 30%;
+    top: 10%;
+}
+
+img {
+    width: 80px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border: 5px solid white
+}
+
+img:hover {
+    border-style: solid;
+    border-color: #ff9500;
+    border-width: 5px;
+    transition: .3s;
+}
+
+figure {
+    margin: 10px;
+    text-align: center;
+}
+
+figcaption {
+    text-align: center;
+    color: white;
+}
+
+select {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 15px;
+    border-style: none;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+}
+
+div.toolbar {
+    background: rgba(99,55,255);
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+@media (max-width: 500px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    img {
+        width: 40px;
+        height: auto;
+    }
+
+    canvas {
+        position: static;
+        height: 350px;
+        width: 350px;
+    }
+
+    div.toolbar {
+        height: 250px;
+        overflow-y: auto;
+    }
+}
