@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/editor.css">
+        <title>FlatPlanner - Editor</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="module" src="../js/init.js"></script>
+    </head>
+    <body>
+        <header>
+            <button id="home-btn">Home</button>
+            <button id="save-btn">Save</button>
+        </header>
+        <main>
+            <div class="toolbar">
+                <div class="dimension-container">
+                    <div class="dimension-container-edit">
+                        <label>Length:</label>
+                        <input id="length-input" type="number" min="1" max="10" maxlength="2" value="10">
+                    </div>
+                    <div class="dimension-container-edit">
+                        <label>Width:</label>
+                        <input id="width-input" type="number" min="1" max="10" maxlength="2" value="10">
+                    </div>
+                </div>
+                <select>
+                    <option>Walls</option>
+                    <option>Furniture&Appliances</option>
+                </select>
+                <table>
+                    <tr>
+                        <td>
+                            <div id="wall-hor" class="draggable">
+                                <figure>
+                                <img src="../res/wall-hor.png">
+                                <figcaption>
+                                    Wall
+                                </figcaption>
+                            </figure>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="wall-ver" class="draggable">
+                                <figure>
+                                <img src="../res/wall-ver.png">
+                                <figcaption>
+                                    Wall
+                                </figcaption>
+                            </figure>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="bed" class="draggable">
+                                <figure>
+                                <img src="../res/bed.png">
+                                <figcaption>
+                                    Bed
+                                </figcaption>
+                            </figure>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="chair" class="draggable">
+                                <figure>
+                                <img src="../res/chair.png">
+                                <figcaption>
+                                    Chair
+                                </figcaption>
+                            </figure>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="fridge" class="draggable">
+                                <figure>
+                                <img src="../res/fridge.png">
+                                <figcaption>
+                                    Fridge
+                                </figcaption>
+                            </figure>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="dishwasher" class="draggable">
+                                <figure>
+                                <img src="../res/dishwasher.png">
+                                <figcaption>
+                                    Dishwasher
+                                </figcaption>
+                            </figure>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="table" class="draggable">
+                                <figure>
+                                <img src="../res/table.png">
+                                <figcaption>
+                                    Table
+                                </figcaption>
+                            </figure>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="couch" class="draggable">
+                                <figure>
+                                <img src="../res/couch.png">
+                                <figcaption>
+                                    Couch
+                                </figcaption>
+                            </figure>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="cupboard" class="draggable">
+                                <figure>
+                                <img src="../res/cupboard.png">
+                                <figcaption>
+                                    Cupboard
+                                </figcaption>
+                            </figure>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="wardrobe" class="draggable">
+                                <figure>
+                                <img src="../res/wardrobe.png">
+                                <figcaption>
+                                    Wardrobe
+                                </figcaption>
+                            </figure>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="tv" class="draggable">
+                                <figure>
+                                <img src="../res/TV.png">
+                                <figcaption>
+                                    TV
+                                </figcaption>
+                            </figure>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="oven" class="draggable">
+                                <figure>
+                                <img src="../res/oven.png">
+                                <figcaption>
+                                    Oven
+                                </figcaption>
+                            </figure>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="workspace">
+                <div id="canvas"></div>
+            </div>
+        </main>
+        <script type="module" src="../js/editor.js"></script>
+    </body>
+</html>

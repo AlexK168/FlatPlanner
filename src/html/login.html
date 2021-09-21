@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/login.css">
+        <title>FlatPlanner - Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="module" src="../js/init.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div id="logo">
+                    FlatPlanner
+                </div>
+                <nav>
+                    <a class="nav-link" href="projects.html">+New Project</a>
+                    <a class="nav-link" href="#contactus">Contact us</a>
+                    <a class="nav-link" href="login.html">Log in</a>
+                </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="login-box">
+                <form id="auth-form">
+                  <div class="user-box">
+                    <input type="email" name="" required="" id="email-field">
+                    <label id="email-label">E-mail</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="password" name="" required="" id="password-field" minlength="8">
+                    <label id="password-label">Password</label>
+                  </div>
+                  <div class="radio-group">
+                    <input type="radio" id="sign-in" name="selector" checked>
+                    <label for="sign-in">Sign in</label>
+                    <input type="radio" id="sign-up"name="selector">
+                    <label for="sign-up">Sign up</label>
+                  </div>
+                  <div class="submit-link-container">
+                    <button id="submit" disabled>
+                        Submit
+                    </button>
+                  </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <p id="logo">FlatPlanner</p>
+                <p id="contactus">Contact us:<br><a class="nav-link" id="contactus" href="mailto:Fp@gmail.com">Fp@gmail.com</a></p>
+            </div>
+        </footer>
+        
+        <script type="module" src="../js/login.js"></script>
+    </body>
+</html>
